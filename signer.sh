@@ -2,8 +2,7 @@ if [[ $EUID -ne 0 ]]; then
 echo "This script must be run as root"
 exit 1
 fi
-echo "Usage: bash signer.sh ipaname.ipa <-s>"
-echo "-s argument is optional, if selected, the signed .ipa will be placed in /var/mobile/Documents/signed"
+echo "Usage: bash signer.sh ipaname.ipa"
 
 if [ ! -f /usr/bin/ldid ] || [ ! -f /usr/bin/zip ] || [ ! -f /usr/bin/unzip ]; then
 echo "***You need "'zip'", "'unzip,'" and "'Link Identity Editor (ldid)'" installed from Cydia to begin***"
