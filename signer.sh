@@ -10,7 +10,7 @@ echo "Exiting, one or more of the required programs is missing"
 exit
 fi
 
-if [$1 == ""]; then
+if [ $1 == "" ]; then
 echo "You didn't specify an argument (ipa file), try again."
 exit
 fi
